@@ -9,23 +9,29 @@
 - 走路与小跑采用原生 24 FPS 动作帧，调整脚步声同步和循环衔接。
 - 保留原形象 ID、声音、角色造型、对话框以及互动动作。
 
+## 动作演示
+
+v1.0.2 的动作演示，包含行走、拎起与落地，以及「龙族契约」。
+
+https://github.com/user-attachments/assets/2821ab9f-1992-4145-b252-271aead0bc63
+
 ## 安装
 
-在 DeskHollow v0.1.05 / v0.1.05-R2 中，先切换到其他形象，选择「导入形象」并导入完整 ZIP；更新时选择替换旧版，之后切换回 ChatGPT 白银龙娘。
+1. 下载 [白龙形象包 v1.0.4（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.4/ChatGPT_Silver_Dragon_Coopanion_v1.0.4.zip)。
+2. 在 Coopanion 打开「设置 → 装扮 → 导入」，选择下载的 ZIP 并确认。
+3. 在形象列表中选中「ChatGPT • 白银龙娘」。更新旧版时，在导入确认框中选择替换。
 
-**不要把 GitHub 自动生成的 Source code ZIP 当成形象安装包。** 请下载 Release 附件中的 `ChatGPT_Silver_Dragon_DeskHollow_v1.0.4.zip`。
+完整版适用 Coopanion v0.2.16 起的导入规则。超过 128 MiB 的包会在确认时显示体积提醒。
 
 ## 校验信息
 
-- 安装包：`ChatGPT_Silver_Dragon_DeskHollow_v1.0.4.zip`
+- 安装包：`ChatGPT_Silver_Dragon_Coopanion_v1.0.4.zip`
 - 文件大小：1,177,439,253 bytes
 - SHA256：`d5af857833a74d162682bff3e8d9444f70e94f551fb4c0f30db7a0ac891cc08e`
 
-## 测试与边界
+## 验证范围
 
-包内 `VALIDATION.json` 记载：41 组动作素材、4,931 帧、636 张无损图集；Linux/Chromium 环境下完成 DeskHollow Figure API 的动作及导入兼容测试。
-
-尚未在用户的 Windows 原生桌面合成环境中进行实机测试。如果仍存在整块白色闪烁，应检查 Electron / 显卡驱动与透明窗口合成链路。
+共 41 组动作、4,931 帧和 636 张无损图集。已在 Linux / Chromium 环境完成 Figure API 2 的动作及导入兼容检查。Coopanion 原版的 Windows 导入与动作播放尚未实测。
 
 ## 素材与授权
 

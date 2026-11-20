@@ -19,7 +19,7 @@
   "right_walk_tail_visible_frames": 24,
   "right_walk_tail_missing_frames": 0,
   "footstep_direction_tests_passed": 4,
-  "environment": "Linux / Chromium / DeskHollow v0.1.05-R2 Figure API",
+  "environment": "Linux / Chromium / Figure API 2",
   "native_windows_desktop_tested": false,
   "integration_actions_passed": 27,
   "integration_directions_passed": 6,

@@ -1,17 +1,20 @@
 # ChatGPT_DragonGirl_for_Coopanion
 
-ChatGPT 白银龙娘桌宠形象包。基于 Coopanion Figure API 2，适用于 DeskHollow v0.1.05 / v0.1.05-R2。
+这个仓库用于为 Coopanion 添加白龙形象。形象包使用 Coopanion Figure API 2，包含 41 组动作和互动音效。
 
-**最新版本：v1.0.4**。完整安装包请在本仓库 Releases 中下载 `ChatGPT_Silver_Dragon_DeskHollow_v1.0.4.zip`，然后在 DeskHollow 的「形象」页面导入。
+## 动作演示
 
+v1.0.2 的动作演示，包含行走、拎起与落地，以及「龙族契约」。
 
----
+https://github.com/user-attachments/assets/2821ab9f-1992-4145-b252-271aead0bc63
 
-# ChatGPT • 白银龙娘 · DeskHollow v1.0.4 形象包
+## 安装
 
-在 DeskHollow v0.1.05 / v0.1.05-R2 的形象页选择「导入形象」，选中本 ZIP，安装后点选「ChatGPT • 白银龙娘」。这是完整形象包，不需要叠加旧版素材。
+1. 下载 [白龙形象包 v1.0.4（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.4/ChatGPT_Silver_Dragon_Coopanion_v1.0.4.zip)。
+2. 在 Coopanion 打开「设置 → 装扮 → 导入」，选择下载的 ZIP 并确认。
+3. 在形象列表中选中「ChatGPT • 白银龙娘」。更新旧版时，在导入确认框中选择替换。
 
-从旧版更新时，先切换到另一形象，再导入本 ZIP，选择「替换」，然后选回「ChatGPT • 白银龙娘」。沿用同一形象 ID，更新后不需要重新绑定角色。高清无损素材体积较大，导入页的 128 MiB 提示是体积提醒，不是格式错误；请等待导入结束，不要在写入过程中退出。
+完整版适用 Coopanion v0.2.16 起的导入规则。超过 128 MiB 的包会在确认时显示体积提醒。
 
 ## v1.0.4 修复内容
 
@@ -32,11 +35,9 @@ ChatGPT 白银龙娘桌宠形象包。基于 Coopanion Figure API 2，适用于 
 - 按住角色拖动时，角色围绕抓取点摆动；松手后下落，甩出时保留水平速度。落地点由宿主地板和活动范围决定。
 - 招手、贴贴、比心、挥羽毛、翻绘本、玩掌机等单次动作在桌面上只播放一遍，然后回到待机。动作页预览沿用宿主的重复点播和停止操作。
 
-## 声音与对话框
+## 声音
 
 保留 v1.0.2 的全部声音文件、音量开关和分类开关。本版只调整行走与奔跑的脚步时间点，不改变声音素材。
-
-对话框样式选择「跟随形象」后，白天和夜间均沿用黑底与淡紫描边。额外白色外框仍依赖此前单独提供的 DeskHollow 气泡兼容补丁；本形象包不覆盖 DeskHollow 主程序。
 
 ## 来源与授权
 
@@ -46,6 +47,4 @@ credits 目录保留原项目署名和素材声明。公开分发或商业使用
 
 ## 验证范围
 
-本包包含素材无损回读检查、动作与序列索引检查、渲染器透明与切帧测试，以及 DeskHollow Figure API 和导入器兼容测试。具体结果见随包的 VALIDATION.json。
-
-测试环境为 Linux 上的 Chromium 和 DeskHollow 源码测试环境，未在用户的 Windows 桌面合成器上实际运行。若某台设备仍出现整块白色窗口闪烁，应进一步检查该设备的 Electron / 显卡合成路径；本包不会修改主程序或系统图形设置。
+素材无损回读、动作序列和透明渲染的检查结果见仓库中的 [VALIDATION.json](VALIDATION.json)。测试在 Linux / Chromium 下完成。Coopanion 原版的 Windows 导入与动作播放尚未实测。
