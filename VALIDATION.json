@@ -1,0 +1,32 @@
+{
+  "version": "1.0.4",
+  "figure_id": "chatgpt-bailong-motion",
+  "clips": 41,
+  "authored_frames": 4931,
+  "lossless_atlas_pages": 636,
+  "frame_resolutions": {
+    "512": 3757,
+    "720": 1174
+  },
+  "atlas_bytes": 1176799210,
+  "manifest_settings_preserved": true,
+  "sound_files_byte_identical": true,
+  "sequence_bounds_valid": true,
+  "lossless_rgba_roundtrip_checked_during_build": true,
+  "renderer_tests_passed": 19,
+  "renderer_browser_errors": 0,
+  "gait_endpoint_and_loop_checks_passed": true,
+  "right_walk_tail_visible_frames": 24,
+  "right_walk_tail_missing_frames": 0,
+  "footstep_direction_tests_passed": 4,
+  "environment": "Linux / Chromium / DeskHollow v0.1.05-R2 Figure API",
+  "native_windows_desktop_tested": false,
+  "integration_actions_passed": 27,
+  "integration_directions_passed": 6,
+  "rendered_frames_checked": 16941,
+  "blank_frames_detected": 0,
+  "opaque_background_frames_detected": 0,
+  "delayed_decode_ms": 100,
+  "drag_release_and_hidden_draw_passed": true,
+  "integration_report": "All listed actions and both directions of walk/run/fly completed"
+}
