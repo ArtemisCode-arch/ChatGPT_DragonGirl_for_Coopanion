@@ -10,11 +10,17 @@ https://github.com/user-attachments/assets/2821ab9f-1992-4145-b252-271aead0bc63
 
 ## 安装
 
-1. 下载 [白龙形象包 v1.0.4（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.4/ChatGPT_Silver_Dragon_Coopanion_v1.0.4.zip)。
+1. 下载 [白龙形象包 v1.0.5（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.5/ChatGPT_Silver_Dragon_Coopanion_v1.0.5.zip)。
 2. 在 Coopanion 打开「设置 → 装扮 → 导入」，选择下载的 ZIP 并确认。
 3. 在形象列表中选中「ChatGPT • 白银龙娘」。更新旧版时，在导入确认框中选择替换。
 
 完整版适用 Coopanion v0.2.16 起的导入规则。超过 128 MiB 的包会在确认时显示体积提醒。
+
+## v1.0.5 修复内容
+
+- 走路、奔跑和飞行在准备、循环、收势切换前预读下一段的多页图集，单次动作结束前预读待机图集，减少等待解码造成的停顿。
+- 逐帧处理 636 张无损 WebP 图集的 4,931 帧，清除 4,889 处轮廓外的孤立低 Alpha 杂点，校正 171,066 个低 Alpha 边缘像素的串色。通过相邻帧的位置判断保留淡入淡出的特效粒子。
+- 沿用 v1.0.4 的原帧序、分辨率、音效和形象 ID。
 
 ## v1.0.4 修复内容
 
@@ -37,7 +43,7 @@ https://github.com/user-attachments/assets/2821ab9f-1992-4145-b252-271aead0bc63
 
 ## 声音
 
-保留 v1.0.2 的全部声音文件、音量开关和分类开关。本版只调整行走与奔跑的脚步时间点，不改变声音素材。
+全部声音文件、音量开关和分类开关沿用 v1.0.4。脚步声继续按原帧序同步。
 
 ## 来源与授权
 
@@ -47,4 +53,4 @@ credits 目录保留原项目署名和素材声明。公开分发或商业使用
 
 ## 验证范围
 
-素材无损回读、动作序列和透明渲染的检查结果见仓库中的 [VALIDATION.json](VALIDATION.json)。测试在 Linux / Chromium 下完成。Coopanion 原版的 Windows 导入与动作播放尚未实测。
+逐帧解码、动作序列索引及 ZIP 完整性检查通过。模拟 200 毫秒图集解码延迟，离线测试左右走、跑、飞、短程飞行、中途停止和单次动作回待机，共 9 个场景通过。 [校验数据](VALIDATION.json)
