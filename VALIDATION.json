@@ -1,90 +1,41 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.5",
   "figure_id": "chatgpt-bailong-motion",
   "clips": 41,
-  "playback_frames": 5225,
+  "authored_frames": 4931,
   "frame_resolutions": {
-    "512": 4051,
+    "512": 3757,
     "720": 1174
   },
-  "lossless_atlas_pages": 672,
-  "atlas_bytes": 1223131306,
-  "original_clips_reprocessed": 41,
-  "matte_reference": {
-    "clip": "pout",
-    "frame_zero_based": 28,
-    "bright_rim_samples": 1526,
-    "outer_rim_mean_luma_above_25_before": 55.97,
-    "outer_rim_mean_luma_above_25_after": 10.93,
-    "opaque_interiors_pixel_identical": true
-  },
-  "atlas_roundtrip_pixels_verified": true,
-  "walk_gutters_verified": true,
+  "lossless_atlas_pages": 636,
+  "atlas_bytes": 1175203412,
+  "frames_changed": 4914,
+  "isolated_pixels_removed": 27721,
+  "edge_rgb_pixels_corrected": 171066,
+  "isolated_components_removed": 4889,
+  "particle_supported_components_preserved": 278,
+  "sequence_bounds_valid": true,
+  "opaque_and_high_alpha_pixels_preserved": true,
+  "lossless_rgba_roundtrip_checked_during_build": true,
   "blank_frames_detected": 0,
-  "manifest_id_settings_and_audio_files_preserved": true,
-  "walk_seam_metrics": {
-    "l": {
-      "contour_pixels": 395249,
-      "loop_duration_seconds": 1.3333333333333333,
-      "old_native_fps": 24,
-      "new_rendered_fps": 48,
-      "bridge_source_frames": 8,
-      "old_max_loop_neighbor_change": 14.822616577148438,
-      "new_max_loop_neighbor_change": 5.405643939971924,
-      "old_two_biggest_loop_changes": [
-        14.143049240112305,
-        14.822616577148438
-      ],
-      "new_two_biggest_loop_changes": [
-        5.31392240524292,
-        5.405643939971924
-      ],
-      "start_and_exit_use_identical_bridge_pose": true
-    },
-    "r": {
-      "contour_pixels": 333773,
-      "loop_duration_seconds": 1,
-      "old_native_fps": 24,
-      "new_rendered_fps": 48,
-      "bridge_source_frames": 7,
-      "old_max_loop_neighbor_change": 20.219619750976562,
-      "new_max_loop_neighbor_change": 7.10483980178833,
-      "old_two_biggest_loop_changes": [
-        17.959840774536133,
-        20.219619750976562
-      ],
-      "new_two_biggest_loop_changes": [
-        6.970418453216553,
-        7.10483980178833
-      ],
-      "start_and_exit_use_identical_bridge_pose": true
-    }
+  "manifest_only_version_changed": true,
+  "model_and_sound_files_byte_identical": true,
+  "transition_test": {
+    "environment": "Node.js with simulated atlas decoding and canvas",
+    "image_decode_delay_ms": 200,
+    "display_ticks_per_second": 60,
+    "cases": 9,
+    "cases_passed": 9,
+    "stalled_ticks_v1_0_4": 69,
+    "stalled_ticks_v1_0_5": 0,
+    "idle_frame_unavailable_on_return_v1_0_4": 8,
+    "idle_frame_unavailable_on_return_v1_0_5": 0,
+    "run_in_coopanion": false
   },
-  "walk_runtime_checks": {
-    "environment": "Node.js simulated 60 Hz updates and decode latency",
-    "cases": 8,
-    "cases_passed": 8,
-    "forced_delayed_atlas_seconds": 2.4,
-    "stationary_ticks_in_delay_cases_v1_0_5": [
-      85,
-      85
-    ],
-    "stationary_ticks_in_delay_cases_v1_0_6": [
-      0,
-      0
-    ]
-  },
-  "canvas_render_checks": {
-    "environment": "Node.js / Skia Canvas2D with real WebP decoding",
-    "cases": 30,
-    "maxMeanPremultipliedError": 0.0005339752854825368,
-    "transparentCorners": true
-  },
-  "installed_in_coopanion": false,
   "archive": {
-    "filename": "ChatGPT_Silver_Dragon_Coopanion_v1.0.6.zip",
-    "bytes": 1223777641,
-    "sha256": "6ee2988ed45ea200df511b3a05bf3319b4430a2ccfcd138ba590864e67a7df63",
+    "filename": "ChatGPT_Silver_Dragon_Coopanion_v1.0.5.zip",
+    "bytes": 1175843702,
+    "sha256": "8cf5d52f4911b1949573ee3ada9e2bcaf68bcfbb88e7d1ae4023e1d459d0c5fc",
     "crc_verified": true
   }
 }
