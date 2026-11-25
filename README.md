@@ -1,4 +1,4 @@
-# ChatGPT_DragonGirl_for_Coopanion
+# ChatGPT • 白银龙娘 形象包 for Coopanion
 
 这个仓库用于为 Coopanion 添加白龙形象。形象包使用 Coopanion Figure API 2，包含 41 组动作和互动音效。
 
