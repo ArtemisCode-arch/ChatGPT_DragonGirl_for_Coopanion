@@ -4,21 +4,28 @@
 
 ## 动作演示
 
-v1.0.7 的动作演示（约 44 秒），包含左右走路、跑步、飞行，以及拎起、放下和甩出。
+v1.0.7 修正版动作演示（约 41 秒）。左右并排展示走路、跑步和飞行，随后展示拎起、放下和甩出。
 
-https://github.com/user-attachments/assets/ceb882d1-ccd3-4d9a-8583-e059d39e6d3b
+https://github.com/user-attachments/assets/c16d90e3-d4e5-4207-95e7-d8dfefcc0eaa
 
-[下载高清演示 MP4](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_v1.0.7_preview.mp4)
+[下载高清演示 MP4](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_v1.0.7_motion-fix_preview.mp4)
 
 ## 安装
 
-1. 下载 [白银龙娘形象包 v1.0.7（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_Coopanion_v1.0.7.zip)。
+1. 下载 [白银龙娘形象包 v1.0.7（约 1.19 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_Coopanion_v1.0.7_motion-fix.zip)。
 2. 在 Coopanion 打开「设置 → 装扮 → 导入」，选择下载的 ZIP 并确认。
-3. 在形象列表中选中「ChatGPT • 白银龙娘」。更新旧版时，在导入确认框中选择替换。
+3. 在形象列表中选中「ChatGPT • 白银龙娘」。已安装原 v1.0.7 的用户也需要重新下载，并在导入确认框选择「替换」。如果白银龙娘正在桌面显示，先切换到 Coo，再切回白银龙娘，即可载入新版。
 
 完整版适用 Coopanion v0.2.16 起的导入规则。超过 128 MiB 的包会在确认时显示体积提醒。
 
 ## v1.0.7 修复内容
+
+**同版本替换更新**
+
+- 对齐左右起飞、振翅和落地的帧序、位移时机和脚底锚点。逐帧对照 397 对画面，人物轮廓的宽、高均一致。
+- 修正跑步循环中两只脚突然交错，以及减速后两鞋反复并拢、分开的问题。
+
+**本版其他修复**
 
 - 重做左右走、跑、飞的起步、循环与收势，修复飞行缩放跳变和部分翼尖裁切。
 - 重新衔接拎起、悬挂、松手与落地，覆盖移动中抓取及快速拎放。
@@ -61,4 +68,4 @@ credits 目录保留原项目署名和素材声明。公开分发或商业使用
 
 ## 验证范围
 
-v1.0.7 的 4,936 帧均通过解码，46 个回放场景通过。Linux 版 Coopanion 0.2.24 实测从 v1.0.5 替换安装，以及左右走、跑、飞和鼠标拎放。详细数据包含在新版 ZIP 的 `VALIDATION.json` 中。 [查看 v1.0.7 发布说明](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/tag/v1.0.7) · [v1.0.5 校验记录](VALIDATION.json)
+修正版的 4,936 帧均通过解码。Coopanion 0.2.24 的角色沙箱已回放左右飞行、跑步、主动停止和中途换向。逐帧几何对照与播放验证数据在 ZIP 内的 `VALIDATION.json` 中。 [查看 v1.0.7 发布说明](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/tag/v1.0.7) · [v1.0.5 校验记录](VALIDATION.json)
