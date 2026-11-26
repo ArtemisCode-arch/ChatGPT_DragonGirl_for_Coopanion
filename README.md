@@ -1,20 +1,28 @@
 # ChatGPT • 白银龙娘 形象包 for Coopanion
 
-这个仓库用于为 Coopanion 添加白龙形象。形象包使用 Coopanion Figure API 2，包含 41 组动作和互动音效。
+这个仓库用于为 Coopanion 添加白龙形象。形象包使用 Coopanion Figure API 2，提供 37 个表情和动作指令，以及互动音效。
 
 ## 动作演示
 
-v1.0.2 的动作演示，包含行走、拎起与落地，以及「龙族契约」。
+v1.0.7 的动作演示（约 44 秒），包含左右走路、跑步、飞行，以及拎起、放下和甩出。
 
-https://github.com/user-attachments/assets/2821ab9f-1992-4145-b252-271aead0bc63
+https://github.com/user-attachments/assets/ceb882d1-ccd3-4d9a-8583-e059d39e6d3b
+
+[下载高清演示 MP4](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_v1.0.7_preview.mp4)
 
 ## 安装
 
-1. 下载 [白龙形象包 v1.0.5（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.5/ChatGPT_Silver_Dragon_Coopanion_v1.0.5.zip)。
+1. 下载 [白银龙娘形象包 v1.0.7（约 1.18 GB）](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/download/v1.0.7/ChatGPT_Silver_Dragon_Coopanion_v1.0.7.zip)。
 2. 在 Coopanion 打开「设置 → 装扮 → 导入」，选择下载的 ZIP 并确认。
 3. 在形象列表中选中「ChatGPT • 白银龙娘」。更新旧版时，在导入确认框中选择替换。
 
 完整版适用 Coopanion v0.2.16 起的导入规则。超过 128 MiB 的包会在确认时显示体积提醒。
+
+## v1.0.7 修复内容
+
+- 重做左右走、跑、飞的起步、循环与收势，修复飞行缩放跳变和部分翼尖裁切。
+- 重新衔接拎起、悬挂、松手与落地，覆盖移动中抓取及快速拎放。
+- 重建待机与单次动作的 55 段过渡，清理重影、边缘串色和灰白杂色，并启用异步图集解码。
 
 ## v1.0.5 修复内容
 
@@ -53,4 +61,4 @@ credits 目录保留原项目署名和素材声明。公开分发或商业使用
 
 ## 验证范围
 
-逐帧解码、动作序列索引及 ZIP 完整性检查通过。模拟 200 毫秒图集解码延迟，离线测试左右走、跑、飞、短程飞行、中途停止和单次动作回待机，共 9 个场景通过。 [校验数据](VALIDATION.json)
+v1.0.7 的 4,936 帧均通过解码，46 个回放场景通过。Linux 版 Coopanion 0.2.24 实测从 v1.0.5 替换安装，以及左右走、跑、飞和鼠标拎放。详细数据包含在新版 ZIP 的 `VALIDATION.json` 中。 [查看 v1.0.7 发布说明](https://github.com/ArtemisCode-arch/ChatGPT_DragonGirl_for_Coopanion/releases/tag/v1.0.7) · [v1.0.5 校验记录](VALIDATION.json)
